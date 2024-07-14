@@ -12,7 +12,7 @@ app.get("/", (req, res)=>{
         message: "Success !",
     });
 });
-
+// create payment route
 app.post("/payment/create", async(req, res)=>{
     const total = req.query.total
     if(total > 0){
